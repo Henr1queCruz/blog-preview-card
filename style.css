@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  background-color: hsl(47, 88%, 63%);
+  min-height: 100vh;
+  font-size: clamp(0.75rem, 1vw + 0.5rem, 0.875rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  width: 384px;
+  height: 522px;
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  border: 1px solid hsl(0, 0%, 7%);
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+}
+
+main img {
+  object-fit: cover;
+  border-radius: 0.625rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.content p:nth-child(1) {
+  background-color: #f4d04e;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  font-weight: 800;
+}
+
+.content p:nth-child(4) {
+  font-size: clamp(0.875rem, 1vw + 0.5rem, 1rem);
+  color: hsl(0, 0%, 50%);
+  line-height: 1.5rem;
+}
+
+.content h1 {
+  font-size: clamp(1.25rem, 1vw + 1rem, 1.5rem);
+  font-weight: 800;
+}
+
+.content h1:hover {
+  cursor: pointer;
+  color: #f4d04e;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.author img {
+  height: 2rem;
+  object-fit: cover;
+}
+
+.author p {
+  font-weight: 800;
+}
+
+.attribution {
+  margin-top: 1rem;
+  display: none;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
